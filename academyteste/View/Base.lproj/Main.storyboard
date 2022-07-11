@@ -12,7 +12,7 @@
         <!--Featured-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Featured" id="BYZ-38-t0r" customClass="ViewController" customModule="academyteste" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Featured" id="BYZ-38-t0r" customClass="FeaturedViewController" customModule="academyteste" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="415" height="1270"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
                                                             <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FaT-uX-TJp">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="popularCell" id="FaT-uX-TJp" customClass="PopularCollectionViewCell" customModule="academyteste" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="0.0" width="200" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="t5m-X5-kej">
@@ -94,6 +94,10 @@
                                                                         <constraint firstItem="dem-OW-pDp" firstAttribute="leading" secondItem="t5m-X5-kej" secondAttribute="leading" constant="8" id="pE6-J4-v3T"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="image" destination="dem-OW-pDp" id="fF3-vf-7DC"/>
+                                                                    <outlet property="titleLabel" destination="6c7-nd-6OH" id="QaG-y5-9ps"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -143,7 +147,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WTG-qT-pbh">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WTG-qT-pbh" customClass="NowPlayingCollectionViewCell" customModule="academyteste" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="0.0" width="251" height="114"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ohB-xn-iXY">
@@ -189,6 +193,11 @@
                                                                         <constraint firstItem="dPI-qr-1b1" firstAttribute="top" secondItem="ohB-xn-iXY" secondAttribute="top" constant="20" id="uxS-jY-oqd"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="dateLabel" destination="JjC-j7-oGJ" id="2O9-jC-EUd"/>
+                                                                    <outlet property="image" destination="HrZ-Ie-0Vr" id="FnQ-s9-QDc"/>
+                                                                    <outlet property="titleLabel" destination="a3a-Hr-g7h" id="7Ce-F2-MHD"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -310,6 +319,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Featured" id="ooT-Uc-dYa"/>
                     <size key="freeformSize" width="415" height="1270"/>
+                    <connections>
+                        <outlet property="nowPlayingCollectionView" destination="5zk-rB-V0G" id="2dr-Uq-RnA"/>
+                        <outlet property="popularCollectionView" destination="FDR-ok-H3S" id="XhU-2j-NJd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
