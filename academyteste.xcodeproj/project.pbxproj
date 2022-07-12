@@ -21,6 +21,7 @@
 		10FBB789287DF571007396B9 /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB784287DF571007396B9 /* Movie+NowPlaying.swift */; };
 		10FBB78A287DF571007396B9 /* Movie+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB785287DF571007396B9 /* Movie+Popular.swift */; };
 		10FBB78B287DF571007396B9 /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB786287DF571007396B9 /* Movie+TrendingToday.swift */; };
+		10FBB78D287E1450007396B9 /* FeaturedViewController+UiCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB78C287E1450007396B9 /* FeaturedViewController+UiCollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		10FBB784287DF571007396B9 /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
 		10FBB785287DF571007396B9 /* Movie+Popular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Popular.swift"; sourceTree = "<group>"; };
 		10FBB786287DF571007396B9 /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
+		10FBB78C287E1450007396B9 /* FeaturedViewController+UiCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UiCollectionViewDataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				10C21E622873777B0066C494 /* FeaturedViewController.swift */,
+				10FBB78C287E1450007396B9 /* FeaturedViewController+UiCollectionViewDataSource.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				10FBB787287DF571007396B9 /* Movie+TrendingThisWeek.swift in Sources */,
 				10FBB788287DF571007396B9 /* Movie+Upcoming.swift in Sources */,
 				10FBB78A287DF571007396B9 /* Movie+Popular.swift in Sources */,
+				10FBB78D287E1450007396B9 /* FeaturedViewController+UiCollectionViewDataSource.swift in Sources */,
 				10C21E632873777B0066C494 /* FeaturedViewController.swift in Sources */,
 				10C21E5F2873777B0066C494 /* AppDelegate.swift in Sources */,
 				10C21E612873777B0066C494 /* SceneDelegate.swift in Sources */,
