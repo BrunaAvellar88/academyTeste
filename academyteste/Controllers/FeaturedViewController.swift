@@ -9,7 +9,9 @@ import UIKit
 
 class FeaturedViewController: UIViewController, UICollectionViewDataSource {
   
-
+    let popularMovies = Movie.popularMovies()
+    let nowPlayingMovies = Movie.nowPlayingMovies()
+    
     @IBOutlet var popularCollectionView: UICollectionView!
     @IBOutlet var nowPlayingCollectionView: UICollectionView!
     
@@ -18,23 +20,24 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         popularCollectionView.dataSource = self
+        
+       
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return popularMovies.count
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "popularCell", for: indexPath) as? PopularCollectionViewCell
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "popularCell", for: indexPath) as? PopularCollectionViewCell{
+            cell.titleLabel.text = popularMovies[indexPath.item].title
+            cell.image.image = UIImage(named: popularMovies[indexPath.item].backdrop)
+            return cell
+            
+        }
         
-        cell?.titleLabel.text = "Título do Filme"
-        cell?.image.image = UIImage()
-        
-        return cell ?? UICollectionViewCell()
-        
-        
-        
+        return UICollectionViewCell()
         
     }
     
