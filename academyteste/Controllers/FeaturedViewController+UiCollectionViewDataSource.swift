@@ -15,12 +15,25 @@ extension FeaturedViewController: UICollectionViewDataSource {
         } else {
             return 0
         }
-}
-
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if collectionView == popularCollectionView {
+            return makePopularCell(indexPath)
+            
+        } else if collectionView == nowPlayingCollectionView {
+            return makeNowPlayingCell(indexPath)
+        }
+        return UICollectionViewCell()
+    }
+    
     fileprivate func makePopularCell(_ indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifier, for: indexPath) as? PopularCollectionViewCell{
-            cell.titleLabel.text = popularMovies[indexPath.item].title
-            cell.image.image = UIImage(named: popularMovies[indexPath.item].backdrop)
+            
+            cell.setup(title: popularMovies[indexPath.item].title,
+                       image: UIImage(named:popularMovies[indexPath.item].backdrop) ??
+                        UIImage())
             return cell
         }
         return PopularCollectionViewCell()
@@ -37,15 +50,5 @@ extension FeaturedViewController: UICollectionViewDataSource {
         return NowPlayingCollectionViewCell()
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if collectionView == popularCollectionView {
-            return makePopularCell(indexPath)
-
-        } else if collectionView == nowPlayingCollectionView {
-            return makeNowPlayingCell(indexPath)
-
-        }
-        return UICollectionViewCell()
-    }
+    
 }

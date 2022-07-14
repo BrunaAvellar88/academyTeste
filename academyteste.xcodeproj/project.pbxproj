@@ -93,12 +93,12 @@
 		100072C4287DEDF20021D774 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				10FBB784287DF571007396B9 /* Movie+NowPlaying.swift */,
+				100072C5287DEE470021D774 /* Movie.swift */,
 				10FBB785287DF571007396B9 /* Movie+Popular.swift */,
+				10FBB784287DF571007396B9 /* Movie+NowPlaying.swift */,
 				10FBB782287DF571007396B9 /* Movie+TrendingThisWeek.swift */,
 				10FBB786287DF571007396B9 /* Movie+TrendingToday.swift */,
 				10FBB783287DF571007396B9 /* Movie+Upcoming.swift */,
-				100072C5287DEE470021D774 /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
