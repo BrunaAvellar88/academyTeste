@@ -12,6 +12,8 @@ extension FeaturedViewController: UICollectionViewDataSource {
             return popularMovies.count
         } else if collectionView == nowPlayingCollectionView {
             return nowPlayingMovies.count
+        } else if collectionView == upcomingCollectionView {
+            return upcomingMovies.count
         } else {
             return 0
         }
@@ -24,6 +26,8 @@ extension FeaturedViewController: UICollectionViewDataSource {
             
         } else if collectionView == nowPlayingCollectionView {
             return makeNowPlayingCell(indexPath)
+        } else if collectionView == upcomingCollectionView {
+            return makeUpcomingCell(indexPath)
         }
         return UICollectionViewCell()
     }
@@ -57,5 +61,12 @@ extension FeaturedViewController: UICollectionViewDataSource {
         return NowPlayingCollectionViewCell()
     }
     
-    
+    fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UpcomingCollectionViewCell {
+        if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell {
+            let arrayDeData = upcomingMovies[indexPath.row].releaseDate.split(separator: "-")
+                        cell.setup(title: upcomingMovies[indexPath.row].title, year: "\(arrayDeData[2])/\(arrayDeData[1])", image: UIImage(named: upcomingMovies[indexPath.row].posterPath) ?? UIImage())
+                        return cell
+        }
+        return UpcomingCollectionViewCell()
+    }
 }

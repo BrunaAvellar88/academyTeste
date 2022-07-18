@@ -27,6 +27,7 @@
 		10FBB7932881E7DB007396B9 /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10FBB7922881E7DB007396B9 /* TMDB-Info.plist */; };
 		10FBB7952881EC3F007396B9 /* Movie+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB7942881EC3F007396B9 /* Movie+API.swift */; };
 		10FBB7972881F8E0007396B9 /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB7962881F8E0007396B9 /* MoviesResponse.swift */; };
+		10FBB7992885D226007396B9 /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB7982885D226007396B9 /* UpcomingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		10FBB7922881E7DB007396B9 /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
 		10FBB7942881EC3F007396B9 /* Movie+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+API.swift"; sourceTree = "<group>"; };
 		10FBB7962881F8E0007396B9 /* MoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
+		10FBB7982885D226007396B9 /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				10C21E692873777E0066C494 /* LaunchScreen.storyboard */,
 				100072BD287C98050021D774 /* PopularCollectionViewCell.swift */,
 				100072BF287C98500021D774 /* NowPlayingCollectionViewCell.swift */,
+				10FBB7982885D226007396B9 /* UpcomingCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				10FBB791287F47EC007396B9 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
 				10FBB7972881F8E0007396B9 /* MoviesResponse.swift in Sources */,
+				10FBB7992885D226007396B9 /* UpcomingCollectionViewCell.swift in Sources */,
 				100072C0287C98500021D774 /* NowPlayingCollectionViewCell.swift in Sources */,
 				10FBB7952881EC3F007396B9 /* Movie+API.swift in Sources */,
 				10FBB789287DF571007396B9 /* Movie+NowPlaying.swift in Sources */,

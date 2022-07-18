@@ -27,6 +27,7 @@ class DetailsViewController: UIViewController {
         }
         self.title = movie.title
         
+        
         Task {
             let imageDataBackdrop = await Movie.downloadImageData(withPath: movie.backdropPath)
             let backdrop = UIImage(data: imageDataBackdrop) ?? UIImage()
