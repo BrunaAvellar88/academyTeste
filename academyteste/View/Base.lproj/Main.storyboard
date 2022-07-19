@@ -17,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="415" height="1270"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roxo" translatesAutoresizingMaskIntoConstraints="NO" id="0E1-8o-E5V">
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="1270"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUu-1u-BbG">
                                 <rect key="frame" x="0.0" y="140" width="415" height="1047"/>
                                 <subviews>
@@ -47,7 +51,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="ILG-tv-qo0" firstAttribute="top" secondItem="8nY-P0-ukf" secondAttribute="top" id="0d6-TH-YBf"/>
                                                             <constraint firstAttribute="trailing" secondItem="ILG-tv-qo0" secondAttribute="trailing" constant="16" id="NXZ-aC-4Lu"/>
@@ -57,7 +61,7 @@
                                                     </view>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FDR-ok-H3S">
                                                         <rect key="frame" x="0.0" y="58" width="415" height="140"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="140" id="r3S-17-HqB"/>
                                                         </constraints>
@@ -128,7 +132,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="Cvm-B8-GRy" firstAttribute="leading" secondItem="6e0-lj-s6g" secondAttribute="leading" constant="16" id="4iM-Dc-Ucb"/>
                                                             <constraint firstItem="Cvm-B8-GRy" firstAttribute="top" secondItem="6e0-lj-s6g" secondAttribute="top" id="OFN-Jr-SkW"/>
@@ -138,7 +142,7 @@
                                                     </view>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5zk-rB-V0G">
                                                         <rect key="frame" x="0.0" y="61" width="415" height="342"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="342" id="ZW2-bW-gtS"/>
                                                         </constraints>
@@ -229,7 +233,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="dn7-Y4-2tc" firstAttribute="top" secondItem="F5F-5W-HvF" secondAttribute="top" id="fbL-XJ-5zF"/>
                                                             <constraint firstItem="dn7-Y4-2tc" firstAttribute="leading" secondItem="F5F-5W-HvF" secondAttribute="leading" constant="16" id="qOi-g0-6vU"/>
@@ -239,7 +243,7 @@
                                                     </view>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZIi-8Z-hMB">
                                                         <rect key="frame" x="0.0" y="61" width="415" height="318"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="318" id="nKO-Zq-MMu"/>
                                                         </constraints>
@@ -315,18 +319,17 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="gJR-la-4dA"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="IAp-Bh-zrJ"/>
                             </scrollView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Db-tL-U8n">
-                                <rect key="frame" x="0.0" y="1183" width="415" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="dUu-1u-BbG" secondAttribute="top" id="7Xn-kC-LYh"/>
                             <constraint firstItem="dUu-1u-BbG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="D7a-OU-tVl"/>
+                            <constraint firstAttribute="bottom" secondItem="0E1-8o-E5V" secondAttribute="bottom" id="Upo-x1-q8i"/>
+                            <constraint firstItem="0E1-8o-E5V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Vj7-HJ-5iN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="dUu-1u-BbG" secondAttribute="leading" id="ePJ-dz-18a"/>
+                            <constraint firstItem="0E1-8o-E5V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n2G-b7-VXr"/>
+                            <constraint firstItem="0E1-8o-E5V" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="t9s-pb-9v3"/>
                             <constraint firstItem="dUu-1u-BbG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wUi-vC-kv8"/>
                         </constraints>
                     </view>
@@ -351,6 +354,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1265"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="roxoazul" translatesAutoresizingMaskIntoConstraints="NO" id="syP-lr-OX1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0x-WT-voW">
                                 <rect key="frame" x="0.0" y="88" width="414" height="1094"/>
                                 <subviews>
@@ -359,6 +367,7 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TC5-W2-pWT">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="221"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="TC5-W2-pWT" secondAttribute="height" multiplier="375:200" id="pVh-ey-hpt"/>
                                                 </constraints>
@@ -370,10 +379,10 @@
                                                         <rect key="frame" x="16" y="0.0" width="382" height="50"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
+                                                        <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="bgB-x2-Zg6" secondAttribute="bottom" id="22q-tt-bvJ"/>
                                                     <constraint firstAttribute="trailing" secondItem="bgB-x2-Zg6" secondAttribute="trailing" constant="16" id="HE1-1z-NR1"/>
@@ -419,13 +428,13 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;ratingLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPI-z2-kON">
                                                                 <rect key="frame" x="30" y="0.0" width="212" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <color key="textColor" red="0.39606896330000002" green="0.37716156179999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="textColor" red="0.396078431372549" green="0.37647058823529411" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="bRv-is-7TV" firstAttribute="leading" secondItem="4fK-BB-9zW" secondAttribute="leading" constant="16" id="AbT-MN-g2G"/>
                                                     <constraint firstAttribute="bottom" secondItem="bRv-is-7TV" secondAttribute="bottom" constant="8" id="Jqw-6f-jq0"/>
@@ -460,7 +469,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="23g-dr-UTf" secondAttribute="trailing" constant="16" id="0vq-d8-0jI"/>
                                                     <constraint firstAttribute="bottom" secondItem="pNv-X3-g02" secondAttribute="bottom" constant="16" id="7nE-rT-pH0"/>
@@ -472,7 +481,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -514,11 +523,13 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="chY-Bz-cqP" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ncf-GW-w5S">
+                    <tabBar key="tabBar" alpha="0.80000000000000004" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ncf-GW-w5S">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="Pl7-XV-Bny" kind="relationship" relationship="viewControllers" id="xz7-mA-Yzl"/>
@@ -528,14 +539,14 @@
             </objects>
             <point key="canvasLocation" x="-33" y="60"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Featured-->
         <scene sceneID="Yz9-aq-XiK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pl7-XV-Bny" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="film" catalog="system" id="1Jb-58-xJ5">
+                    <tabBarItem key="tabBarItem" title="Featured" image="film" catalog="system" id="1Jb-58-xJ5">
                         <imageReference key="selectedImage" image="film.fill" catalog="system" renderingMode="hierarchical">
                             <hierarchicalColors>
-                                <color red="0.39606896330000002" green="0.37716156179999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color red="0.62188778160000002" green="0.62530849899999996" blue="0.97449387139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color red="0.62188778160000002" green="0.62530849899999996" blue="0.97449387139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </hierarchicalColors>
@@ -547,17 +558,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.39606896330000002" green="0.37716156179999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <navigationBarAppearance key="standardAppearance">
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <textAttributes key="titleTextAttributes">
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
-                                <color key="textColor" red="0.39606896330000002" green="0.37716156179999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </textAttributes>
                         </navigationBarAppearance>
                         <navigationBarAppearance key="scrollEdgeAppearance">
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <textAttributes key="largeTitleTextAttributes">
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
-                                <color key="textColor" red="0.39606896330000002" green="0.37716156179999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </textAttributes>
                         </navigationBarAppearance>
                     </navigationBar>
@@ -574,6 +585,8 @@
     <resources>
         <image name="film" catalog="system" width="128" height="93"/>
         <image name="film.fill" catalog="system" width="128" height="93"/>
+        <image name="roxo" width="1242" height="3795"/>
+        <image name="roxoazul" width="1242" height="3795"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
     </resources>
 </document>
