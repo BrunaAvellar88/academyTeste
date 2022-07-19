@@ -16,6 +16,10 @@
 		10C21E662873777B0066C494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C21E642873777B0066C494 /* Main.storyboard */; };
 		10C21E682873777E0066C494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C21E672873777E0066C494 /* Assets.xcassets */; };
 		10C21E6B2873777E0066C494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C21E692873777E0066C494 /* LaunchScreen.storyboard */; };
+		10D3D5C4288745E90027E915 /* TrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3D5C3288745E90027E915 /* TrendingTableViewCell.swift */; };
+		10D3D5C6288746520027E915 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3D5C5288746520027E915 /* TrendingViewController.swift */; };
+		10D3D5C8288747750027E915 /* TrendingViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3D5C7288747750027E915 /* TrendingViewController+UITableViewDataSource.swift */; };
+		10D3D5CA2887533B0027E915 /* TrendingViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3D5C92887533B0027E915 /* TrendingViewController+UITableViewDelegate.swift */; };
 		10FBB787287DF571007396B9 /* Movie+TrendingThisWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB782287DF571007396B9 /* Movie+TrendingThisWeek.swift */; };
 		10FBB788287DF571007396B9 /* Movie+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB783287DF571007396B9 /* Movie+Upcoming.swift */; };
 		10FBB789287DF571007396B9 /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB784287DF571007396B9 /* Movie+NowPlaying.swift */; };
@@ -42,6 +46,10 @@
 		10C21E672873777E0066C494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10C21E6A2873777E0066C494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10C21E6C2873777E0066C494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10D3D5C3288745E90027E915 /* TrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewCell.swift; sourceTree = "<group>"; };
+		10D3D5C5288746520027E915 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		10D3D5C7288747750027E915 /* TrendingViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		10D3D5C92887533B0027E915 /* TrendingViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		10FBB782287DF571007396B9 /* Movie+TrendingThisWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingThisWeek.swift"; sourceTree = "<group>"; };
 		10FBB783287DF571007396B9 /* Movie+Upcoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Upcoming.swift"; sourceTree = "<group>"; };
 		10FBB784287DF571007396B9 /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
@@ -74,6 +82,9 @@
 				10FBB78C287E1450007396B9 /* FeaturedViewController+UiCollectionViewDataSource.swift */,
 				10FBB790287F47EC007396B9 /* FeaturedViewController+UICollectionViewDelegate.swift */,
 				10FBB78E287F3F03007396B9 /* DetailsViewController.swift */,
+				10D3D5C5288746520027E915 /* TrendingViewController.swift */,
+				10D3D5C7288747750027E915 /* TrendingViewController+UITableViewDataSource.swift */,
+				10D3D5C92887533B0027E915 /* TrendingViewController+UITableViewDelegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -86,6 +97,7 @@
 				100072BD287C98050021D774 /* PopularCollectionViewCell.swift */,
 				100072BF287C98500021D774 /* NowPlayingCollectionViewCell.swift */,
 				10FBB7982885D226007396B9 /* UpcomingCollectionViewCell.swift */,
+				10D3D5C3288745E90027E915 /* TrendingTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,13 +229,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FBB791287F47EC007396B9 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
+				10D3D5CA2887533B0027E915 /* TrendingViewController+UITableViewDelegate.swift in Sources */,
 				10FBB7972881F8E0007396B9 /* MoviesResponse.swift in Sources */,
+				10D3D5C4288745E90027E915 /* TrendingTableViewCell.swift in Sources */,
 				10FBB7992885D226007396B9 /* UpcomingCollectionViewCell.swift in Sources */,
 				100072C0287C98500021D774 /* NowPlayingCollectionViewCell.swift in Sources */,
 				10FBB7952881EC3F007396B9 /* Movie+API.swift in Sources */,
 				10FBB789287DF571007396B9 /* Movie+NowPlaying.swift in Sources */,
+				10D3D5C6288746520027E915 /* TrendingViewController.swift in Sources */,
 				10FBB78B287DF571007396B9 /* Movie+TrendingToday.swift in Sources */,
 				100072BE287C98050021D774 /* PopularCollectionViewCell.swift in Sources */,
+				10D3D5C8288747750027E915 /* TrendingViewController+UITableViewDataSource.swift in Sources */,
 				100072C6287DEE470021D774 /* Movie.swift in Sources */,
 				10FBB787287DF571007396B9 /* Movie+TrendingThisWeek.swift in Sources */,
 				10FBB788287DF571007396B9 /* Movie+Upcoming.swift in Sources */,
@@ -381,6 +397,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZCL9H67TL4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = academyteste/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -408,6 +425,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZCL9H67TL4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = academyteste/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
