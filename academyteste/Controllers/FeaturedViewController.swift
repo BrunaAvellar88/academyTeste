@@ -28,6 +28,8 @@ class FeaturedViewController: UIViewController {
         nowPlayingCollectionView.delegate = self
         upcomingCollectionView.delegate = self
         
+        sleep(2)
+        
         Task {
             self.popularMovies = await Movie.popularMoviesAPI()
             self.popularCollectionView.reloadData()

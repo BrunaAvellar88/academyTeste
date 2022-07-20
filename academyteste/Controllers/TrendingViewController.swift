@@ -35,6 +35,9 @@ class TrendingViewController: UIViewController {
             self.trendingMovies = await Movie.trendingDayMoviesAPI()
             self.trendingTableView.reloadData()
             
+            let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+                    UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .normal)
+            
         }
         // Do any additional setup after loading the view.
     }
