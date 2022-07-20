@@ -38,6 +38,12 @@ class TrendingViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Passar o filme adiante
+        guard let detailsViewControler = segue.destination as? DetailsViewController else {return}
+        guard let movie = sender as? Movie else {return}
+        detailsViewControler.movie = movie
+        }
     
     
 }

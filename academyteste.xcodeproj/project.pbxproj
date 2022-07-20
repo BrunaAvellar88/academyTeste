@@ -20,6 +20,8 @@
 		10D3D5C6288746520027E915 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3D5C5288746520027E915 /* TrendingViewController.swift */; };
 		10D3D5C8288747750027E915 /* TrendingViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3D5C7288747750027E915 /* TrendingViewController+UITableViewDataSource.swift */; };
 		10D3D5CA2887533B0027E915 /* TrendingViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3D5C92887533B0027E915 /* TrendingViewController+UITableViewDelegate.swift */; };
+		10D3D5CC288787FA0027E915 /* SeeAllTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3D5CB288787FA0027E915 /* SeeAllTableViewCell.swift */; };
+		10D3D5CE288789800027E915 /* SeeAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D3D5CD288789800027E915 /* SeeAllViewController.swift */; };
 		10FBB787287DF571007396B9 /* Movie+TrendingThisWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB782287DF571007396B9 /* Movie+TrendingThisWeek.swift */; };
 		10FBB788287DF571007396B9 /* Movie+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB783287DF571007396B9 /* Movie+Upcoming.swift */; };
 		10FBB789287DF571007396B9 /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBB784287DF571007396B9 /* Movie+NowPlaying.swift */; };
@@ -50,6 +52,8 @@
 		10D3D5C5288746520027E915 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		10D3D5C7288747750027E915 /* TrendingViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		10D3D5C92887533B0027E915 /* TrendingViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		10D3D5CB288787FA0027E915 /* SeeAllTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllTableViewCell.swift; sourceTree = "<group>"; };
+		10D3D5CD288789800027E915 /* SeeAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllViewController.swift; sourceTree = "<group>"; };
 		10FBB782287DF571007396B9 /* Movie+TrendingThisWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingThisWeek.swift"; sourceTree = "<group>"; };
 		10FBB783287DF571007396B9 /* Movie+Upcoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Upcoming.swift"; sourceTree = "<group>"; };
 		10FBB784287DF571007396B9 /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				10D3D5C5288746520027E915 /* TrendingViewController.swift */,
 				10D3D5C7288747750027E915 /* TrendingViewController+UITableViewDataSource.swift */,
 				10D3D5C92887533B0027E915 /* TrendingViewController+UITableViewDelegate.swift */,
+				10D3D5CD288789800027E915 /* SeeAllViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 				100072BF287C98500021D774 /* NowPlayingCollectionViewCell.swift */,
 				10FBB7982885D226007396B9 /* UpcomingCollectionViewCell.swift */,
 				10D3D5C3288745E90027E915 /* TrendingTableViewCell.swift */,
+				10D3D5CB288787FA0027E915 /* SeeAllTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				10D3D5C4288745E90027E915 /* TrendingTableViewCell.swift in Sources */,
 				10FBB7992885D226007396B9 /* UpcomingCollectionViewCell.swift in Sources */,
 				100072C0287C98500021D774 /* NowPlayingCollectionViewCell.swift in Sources */,
+				10D3D5CE288789800027E915 /* SeeAllViewController.swift in Sources */,
 				10FBB7952881EC3F007396B9 /* Movie+API.swift in Sources */,
 				10FBB789287DF571007396B9 /* Movie+NowPlaying.swift in Sources */,
 				10D3D5C6288746520027E915 /* TrendingViewController.swift in Sources */,
@@ -249,6 +256,7 @@
 				10C21E5F2873777B0066C494 /* AppDelegate.swift in Sources */,
 				10FBB78F287F3F03007396B9 /* DetailsViewController.swift in Sources */,
 				10C21E612873777B0066C494 /* SceneDelegate.swift in Sources */,
+				10D3D5CC288787FA0027E915 /* SeeAllTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

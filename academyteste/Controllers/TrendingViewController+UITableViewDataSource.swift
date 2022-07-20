@@ -18,15 +18,15 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: TrendingTableViewCell.cellIdentifier, for: indexPath) as! TrendingTableViewCell
     
-    cell.setup(title: trendingMovies[indexPath.item].title, imagem: UIImage (), year: trendingMovies[indexPath.item].releaseDate)
+    cell.setup(title: trendingMovies[indexPath.item].title, imagem: UIImage (), year: trendingMovies[indexPath.item].releaseDate!)
     
     let movie = trendingMovies[indexPath.item]
     
     Task{
         
-        let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+        let imageData = await Movie.downloadImageData(withPath: movie.posterPath!)
         let imagem = UIImage(data: imageData) ?? UIImage()
-        cell.setup(title: movie.title, imagem: imagem, year: String(movie.releaseDate.prefix(4)))
+        cell.setup(title: movie.title, imagem: imagem, year: String(movie.releaseDate!.prefix(4)))
     }
     
     return cell

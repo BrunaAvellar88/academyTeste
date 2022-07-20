@@ -40,7 +40,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
             
             let movie = popularMovies[indexPath.item]
             Task {
-                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath ?? "")
                 let imagem = UIImage(data: imageData) ?? UIImage()
                 cell.setup(title:movie.title, image:imagem)
             }
@@ -56,9 +56,9 @@ extension FeaturedViewController: UICollectionViewDataSource {
             let movie = nowPlayingMovies[indexPath.item]
 
             Task {
-                let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+                let imageData = await Movie.downloadImageData(withPath: movie.posterPath ?? "")
                 let imagem = UIImage(data: imageData) ?? UIImage()
-                cell.setup(title: movie.title, year: String(movie.releaseDate.prefix(4)), image: imagem)
+                cell.setup(title: movie.title, year: String(movie.releaseDate!.prefix(4)), image: imagem)
             }
             
         
@@ -74,10 +74,10 @@ extension FeaturedViewController: UICollectionViewDataSource {
             
             let movie = upcomingMovies[indexPath.item]
 
-            let arrayDeData = upcomingMovies[indexPath.row].releaseDate.split(separator: "-")
+            let arrayDeData = upcomingMovies[indexPath.row].releaseDate!.split(separator: "-")
             
             Task {
-                let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+                let imageData = await Movie.downloadImageData(withPath: movie.posterPath!)
                 let imagem = UIImage(data: imageData) ?? UIImage()
                 cell.setup(title: movie.title, year: arrayDeData[2] + "/" + arrayDeData[1], image: imagem)
             }
